@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="theme-color" content="#050506">
+  <meta name="description" content="Apresentação oficial da Terra Axial, uma adaptação autoral construída a partir da base Marvel Comics.">
+  <title>MARVEL'S AXIAL // INÍCIO</title>
+
+  <link rel="icon" type="image/png" href="https://i.imgur.com/yiuD6Ad.png">
+  <link rel="apple-touch-icon" href="https://i.imgur.com/yiuD6Ad.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&family=Share+Tech+Mono&family=Teko:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css?v=20260721-home1">
+</head>
+<body>
+  <div class="boot-screen" id="bootScreen" aria-hidden="true">
+    <div class="boot-grid"></div>
+    <div class="boot-core">
+      <span>DEFENDERS PAD // NÓ DE ORIGEM</span>
+      <strong>RECONSTRUINDO<br>MEMÓRIA AXIAL</strong>
+      <div class="boot-progress"><i></i></div>
+      <small>TRANSMISSÃO NÃO AUTORIZADA</small>
+    </div>
+  </div>
+
+  <script>
+    (function () {
+      function releaseBoot() {
+        var screen = document.getElementById('bootScreen');
+        if (!screen) return;
+        screen.classList.add('is-hidden');
+        window.setTimeout(function () {
+          if (screen && screen.parentNode) screen.parentNode.removeChild(screen);
+        }, 800);
+      }
+      window.__AXIAL_RELEASE_BOOT__ = releaseBoot;
+      window.setTimeout(releaseBoot, 3000);
+      window.addEventListener('load', function () {
+        window.setTimeout(releaseBoot, 1450);
+      }, { once: true });
+      window.addEventListener('error', function () {
+        window.setTimeout(releaseBoot, 250);
+      });
+    })();
+  </script>
+
+  <button class="mobile-menu-toggle" id="mobileMenuToggle" type="button"
+    aria-controls="siteRail" aria-expanded="false">
+    <span></span><span></span><span></span><b>MENU</b>
+  </button>
+
+  <aside class="site-rail" id="siteRail">
+    <div class="rail-noise"></div>
+
+    <a class="brand-lockup"
+      href="https://universoaxial.tumblr.com/home"
+      target="_top"
+      aria-label="Terra Axial — página inicial">
+      <img
+        src="https://i.imgur.com/Rrok7Tf.png"
+        onerror="this.onerror=null;this.src='https://i.imgur.com/5UEkjjS.png'"
+        alt="Logo Terra Axial">
+      <span>ARQUIVO // ORIGEM</span>
+    </a>
+
+    <div class="holo-spine" aria-hidden="true"><i></i><i></i><i></i></div>
+
+    <nav class="site-nav" aria-label="Navegação principal">
+      <a href="https://universoaxial.tumblr.com/home" target="_top"
+        class="active" aria-current="page"><span>01</span><b>Início</b></a>
+      <a href="https://universoaxial.tumblr.com/cronologia" target="_top">
+        <span>02</span><b>Cronologia</b>
+      </a>
+      <a href="https://universoaxial.tumblr.com/ambientacao" target="_top">
+        <span>03</span><b>Ambientação</b>
+      </a>
+      <a href="https://universoaxial.tumblr.com/pacotes" target="_top">
+        <span>04</span><b>Pacotes</b>
+      </a>
+      <a href="https://universoaxial.tumblr.com/legados" target="_top">
+        <span>05</span><b>Legados</b>
+      </a>
+      <a href="https://universoaxial.tumblr.com/extras" target="_top">
+        <span>06</span><b>Extras</b>
+      </a>
+    </nav>
+
+    <div class="rail-terminal">
+      <div><span>SETOR</span><b>ORIGEM</b></div>
+      <div><span>STATUS</span><b class="online">LIBERADO</b></div>
+      <div><span>ARQUIVO</span><b>AXIAL.00</b></div>
+      <p><i></i> SINAL CLANDESTINO ATIVO</p>
+    </div>
+  </aside>
+
+  <div class="rail-scrim" id="railScrim" aria-hidden="true"></div>
+
+  <main class="page-shell">
+    <section class="hero" id="topo">
+      <div class="hero-grid" aria-hidden="true"></div>
+      <div class="hero-signal" aria-hidden="true"><i></i><i></i><i></i></div>
+
+      <div class="hero-copy reveal">
+        <div class="eyebrow"><i></i> ARQUIVO INTRODUTÓRIO // TERRA AXIAL</div>
+        <h1><span>MARVEL'S</span>AXIAL</h1>
+        <p class="hero-subtitle">UMA REALIDADE CONSTRUÍDA SOBRE TUDO O QUE OS HERÓIS PERDERAM.</p>
+
+        <blockquote>
+          “Quem são esses heróis quando retiramos tudo o que os tornava confortáveis,
+          estabelecidos e seguros?”
+        </blockquote>
+
+        <p class="hero-intro">
+          Terra Axial é uma adaptação autoral que utiliza personagens, símbolos e
+          conceitos da Marvel Comics para construir uma realidade nova, brutal e
+          politicamente organizada. Aqui, o heroísmo não nasce do privilégio de vencer.
+          Nasce da escolha de não abandonar alguém quando o mundo inteiro oferece uma
+          justificativa perfeita para fazê-lo.
+        </p>
+
+        <div class="hero-actions">
+          <a class="primary-action" href="#manifesto"><span>Acessar apresentação</span><i>↘</i></a>
+          <a class="ghost-action" href="#creditos"><span>Consultar créditos</span><i>＋</i></a>
+        </div>
+      </div>
+
+      <figure class="hero-image analog-image reveal" id="heroImage">
+        <img
+          src="https://i.imgur.com/Tc7SVUE.png"
+          alt="Representação visual da Terra Axial"
+          decoding="async"
+          referrerpolicy="no-referrer">
+        <div class="image-hud" aria-hidden="true">
+          <span>VISUAL // AXIAL.00</span>
+          <b>RECONSTRUÇÃO PARCIAL</b>
+          <i></i>
+        </div>
+      </figure>
+
+      <div class="hero-telemetry">
+        <div><span>UNIVERSO</span><strong>REALIDADE ÚNICA</strong></div>
+        <div><span>PROTOCOLO</span><strong>SOBREVIVÊNCIA</strong></div>
+        <div><span>PERGUNTA</span><strong>O QUE RESTA?</strong></div>
+      </div>
+    </section>
+
+    <section class="manifesto section" id="manifesto">
+      <header class="section-heading reveal">
+        <div>
+          <span class="section-code">MANIFESTO // PROPÓSITO DA ADAPTAÇÃO</span>
+          <h2>Um mundo conhecido, retirado do lugar comum.</h2>
+        </div>
+        <p>
+          A Terra Axial não busca repetir uma linha editorial existente. Ela reorganiza
+          referências familiares para perguntar o que acontece quando poder, memória,
+          identidade e esperança deixam de ser garantias.
+        </p>
+      </header>
+
+      <div class="manifesto-layout">
+        <article class="manifesto-copy reveal">
+          <span class="panel-code">ARQUIVO 01 // INTENÇÃO</span>
+          <h3>Reimaginar não é apenas trocar nomes.</h3>
+
+          <p>
+            O projeto foi criado para fugir das adaptações confortáveis em que os
+            personagens apenas recebem novos uniformes enquanto continuam ocupando os
+            mesmos lugares. Na Terra Axial, cada figura é reconstruída a partir daquilo
+            que perdeu, da instituição que a deformou e da escolha que ainda consegue
+            fazer depois da queda.
+          </p>
+
+          <p>
+            A base Marvel permanece reconhecível, mas suas estruturas são submetidas a
+            uma lógica própria. Reinos tornam-se ruínas políticas. Tecnologias viram
+            instrumentos de controle. Religiões administram a morte. A memória transforma-se
+            em contrabando. O mundo não é salvo por uma batalha definitiva: ele é disputado
+            em rotas, arquivos, comunidades e gestos de proteção.
+          </p>
+
+          <p>
+            O propósito da adaptação é devolver consequência aos símbolos. Poderes cobram
+            preço. Alianças exigem concessões. Nenhuma vitória é limpa, e nenhum personagem
+            permanece heroico apenas porque um dia recebeu esse título.
+          </p>
+        </article>
+
+        <div class="principles reveal" aria-label="Princípios criativos da Terra Axial">
+          <article>
+            <span>01</span>
+            <h3>Desconstruir o conforto</h3>
+            <p>
+              Retirar recursos, instituições seguras e destinos garantidos para descobrir
+              o que ainda permanece humano em cada personagem.
+            </p>
+          </article>
+
+          <article>
+            <span>02</span>
+            <h3>Construir uma lógica própria</h3>
+            <p>
+              Transformar referências em história local, com política, cosmologia,
+              territórios e conflitos que pertencem à Terra Axial.
+            </p>
+          </article>
+
+          <article>
+            <span>03</span>
+            <h3>Fazer do heroísmo uma escolha</h3>
+            <p>
+              Um herói axial não é definido pela escala do poder, mas pelo instante em
+              que decide que outra pessoa não será abandonada.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="statement section reveal" aria-label="Declaração central">
+      <div class="statement-lines" aria-hidden="true"></div>
+      <span>PROTOCOLO AXIAL // DECLARAÇÃO 00</span>
+      <p>
+        Thanos não criou toda a violência deste mundo. Ele retirou dela a desordem,
+        reuniu-a sob uma única administração e chamou o resultado de paz.
+      </p>
+      <small>
+        A Terra Axial existe para observar quem ainda escolhe resistir depois que a
+        crueldade recebe uniforme, doutrina e autorização.
+      </small>
+    </section>
+
+    <section class="credits section" id="creditos">
+      <header class="section-heading reveal">
+        <div>
+          <span class="section-code">REGISTRO // AUTORIA E COLABORAÇÃO</span>
+          <h2>Créditos do Projeto</h2>
+        </div>
+        <p>
+          A Terra Axial foi desenvolvida em múltiplas camadas. Cada colaboração ajudou a
+          transformar uma ideia inicial em universo, narrativa, estrutura e experiência.
+        </p>
+      </header>
+
+      <div class="credit-grid">
+        <article class="credit-card primary-credit reveal">
+          <div class="credit-number">I</div>
+          <span>DESENVOLVIMENTO DO PROJETO</span>
+          <h3>Concepção, narrativa e expansão</h3>
+          <p>
+            <strong>Appilgo, Edu, Nani, Bia, Teteu, Chel, Vivi e Guga.</strong>
+          </p>
+          <small>
+            Responsáveis pelo desenvolvimento do projeto em diferentes camadas,
+            linguagens, funções e graus de importância.
+          </small>
+        </article>
+
+        <article class="credit-card reveal">
+          <div class="credit-number">II</div>
+          <span>CONSTRUÇÃO</span>
+          <h3>Estrutura e materialização</h3>
+          <p><strong>Lethi, Pearl e Mendler.</strong></p>
+          <small>
+            Créditos pela construção e pelo suporte que ajudou a transformar o universo
+            em espaço compartilhado.
+          </small>
+        </article>
+
+        <article class="credit-card reveal">
+          <div class="credit-number">III</div>
+          <span>BASE CRIATIVA</span>
+          <h3>Personagens e conceitos originais</h3>
+          <p><strong>Marvel Comics.</strong></p>
+          <small>
+            A Terra Axial é uma adaptação de fã construída sobre personagens, conceitos
+            e propriedades que pertencem aos seus respectivos detentores.
+          </small>
+        </article>
+      </div>
+    </section>
+
+    <section class="closing reveal">
+      <div class="closing-copy">
+        <span>FIM DO ARQUIVO INTRODUTÓRIO</span>
+        <h2>A história começa quando sobreviver deixa de ser suficiente.</h2>
+        <p>
+          Este é apenas o primeiro acesso. A cronologia registra as feridas, a ambientação
+          revela a máquina e os personagens mostram o que ainda consegue respirar dentro dela.
+        </p>
+        <a href="https://universoaxial.tumblr.com/cronologia" target="_top">
+          <span>Prosseguir para a Cronologia</span><i>→</i>
+        </a>
+      </div>
+
+      <div class="closing-mark" aria-hidden="true">
+        <i></i><i></i><i></i>
+        <b>AXIAL</b>
+      </div>
+    </section>
+
+    <footer class="site-footer">
+      <span>MARVEL'S AXIAL // ARQUIVO DE ORIGEM</span>
+      <a href="#topo">RETORNAR AO TOPO ↑</a>
+      <span>TRANSMISSÃO // 00</span>
+    </footer>
+  </main>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <noscript>
+    <div class="noscript">
+      O JavaScript está desativado. O conteúdo permanece disponível, mas os efeitos e o
+      menu móvel podem não funcionar.
+    </div>
+  </noscript>
+
+  <script src="app.js?v=20260721-home1"></script>
+</body>
+</html>
